@@ -67,7 +67,8 @@
   "custom/launcher": {
     "format": " ",
     "on-click": "rofi -show drun",
-    "on-click-right":"killall rofi"
+    "on-click-right":"killall rofi",
+    "tooltip": false
   },
 
   "custom/bluetooth": {
@@ -84,7 +85,7 @@
     "exec": "~/.config/waybar/scripts/notification_icon.sh",
     "interval": 1,
     "on-click": "swaync-client -t",
-    "on-right-click": "swaync-client -d",
+    "on-click-right": "swaync-client -d",
     "return-type": "plain",
     "tooltip": false
   },
