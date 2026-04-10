@@ -10,7 +10,7 @@ bindsym $mod+t exec $term
 bindsym $mod+c kill
 
 # Start app launcher
-bindsym $mod+Return exec $menu
+bindsym $mod+Space exec $menu
 
 # Change normal to inverse to use left mouse button for resizing and right mouse button for dragging.
 floating_modifier $mod normal
@@ -95,7 +95,7 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
     bindsym $mod+f fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+space floating toggle
+    bindsym $mod+Return floating toggle
 
 ##############
 # Scratchpad #
