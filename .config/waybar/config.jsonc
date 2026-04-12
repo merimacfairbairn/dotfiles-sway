@@ -2,7 +2,7 @@
   "layer": "top",
   "modules-left": ["custom/launcher", "wireplumber", "cpu", "memory", "mpris"],
   "modules-center": ["sway/workspaces", "clock"],
-  "modules-right": ["wlr/taskbar", "custom/notifications", "custom/bluetooth", "network", "tray", "battery"],
+  "modules-right": ["wlr/taskbar", "sway/language", "custom/notifications", "custom/bluetooth", "network", "tray", "battery"],
 
   "wireplumber": {
     "tooltip": false,
@@ -88,6 +88,12 @@
     "on-click": "swaync-client -t",
     "on-click-right": "swaync-client -d",
     "return-type": "plain",
+    "tooltip": false
+  },
+
+  "sway/language": {
+    "format": "{short}",
+    "hide-single-layout": true,
     "tooltip": false
   },
 
