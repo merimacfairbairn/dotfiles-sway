@@ -74,6 +74,7 @@
   "custom/bluetooth": {
     "format": " {}",
     "exec": "~/.config/waybar/scripts/bluetooth-display.sh",
+    "exec-if": "ls /sys/class/bluetooth >/dev/null 2>&1",
     "interval": 10,
     "on-click": "kitty -- bluetoothctl",
     "return-type": "plain",
