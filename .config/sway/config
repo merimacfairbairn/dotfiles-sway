@@ -10,8 +10,9 @@ exec_always dbus-update-activation-environment --systemd \
     XDG_CURRENT_DESKTOP \
     XDG_SESSION_TYPE
 
-exec_always wl-paste --type text --watch clipman store
-exec_always wl-paste --type image --watch clipman store
+exec wl-paste --type text --watch clipman store
+exec wl-paste --type image --watch clipman store
+
 exec_always swaymsg output eDP-1 primary
 
 exec_always swaync
