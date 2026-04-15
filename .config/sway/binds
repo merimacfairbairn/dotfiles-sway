@@ -4,10 +4,10 @@
 #########
 
 # Start a terminal
-bindsym $mod+t exec $term
+bindsym $mod+Return exec $term
 
 # Kill focused window
-bindsym $mod+c kill
+bindsym $mod+Slash kill
 
 # Start app launcher
 bindsym $mod+Space exec $menu
@@ -19,7 +19,7 @@ floating_modifier $mod normal
 bindsym $mod+Shift+c reload
 
 # Lock screen
-bindsym $mod+F12 exec swaylock
+bindsym $mod+z exec swaylock
 
 # Exit sway (logs you out of your Wayland session)
 bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -89,14 +89,14 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 
     # Switch the current container between different layout styles
 #    bindsym $mod+s layout stacking
-    bindsym $mod+g layout tabbed
-    bindsym $mod+w layout toggle split
+    bindsym $mod+t layout tabbed
+    bindsym $mod+apostrophe layout toggle split
 
     # Make the current focus fullscreen
-    bindsym $mod+f fullscreen
+    bindsym $mod+m fullscreen
 
     # Toggle the current focus between tiling and floating mode
-    bindsym $mod+Return floating toggle
+    bindsym $mod+f floating toggle
 
 ##############
 # Scratchpad #
