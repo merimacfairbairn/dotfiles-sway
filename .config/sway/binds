@@ -146,13 +146,17 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioLowerVolume exec pactl set-sink-volume \@DEFAULT_SINK@ -5%
     bindsym --locked XF86AudioRaiseVolume exec pactl set-sink-volume \@DEFAULT_SINK@ +5%
     bindsym --locked XF86AudioMicMute exec pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
+
     # Special keys to take a screenshot with grim and slurp
-    bindsym $mod+p exec slurp | grim -g - - | wl-copy
-    bindsym $mod+Shift+p exec slurp | grim -g - - | tee ~/Media/Pictures/Screenshots/$(date +%s).png | wl-copy
+    bindsym $mod+Print exec slurp | grim -g - - | wl-copy
+    bindsym $mod+Shift+Print exec slurp | grim -g - - | tee ~/Media/Pictures/Screenshots/$(date +%s).png | wl-copy
+
     # Clipboard history with rofi
     bindsym $mod+v exec clipman pick -t rofi
+
     # Color picker with grim and slurp (from Reddit of course)
     bindsym $mod+y exec grim -g "$(slurp -p)" -t ppm - | convert - -format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
