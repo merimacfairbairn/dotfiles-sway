@@ -3,7 +3,7 @@
 #########
 
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /home/aboba/Media/Pictures/Wallpapers/gruvbox_spac.jpg fill
+output * bg /home/aboba/Media/Wallpapers/Road.jpg fill
 
 # Font
 font CaskaydiaCoveNerdFont 8
