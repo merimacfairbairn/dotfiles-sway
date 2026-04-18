@@ -20,10 +20,6 @@ exec_always swaync
 ### Idle configuration
 exec_always swayidle -w \
     timeout 300 'swaylock -f' \
-    timeout 600 'swaymsg "output * dpms off"' \
-        resume 'swaymsg "output * dpms on"' \
-    timeout 1200 'systemctl suspend' \
-    before-sleep 'swaylock -f'
 
 # Open up workspace 10 on start
 exec swaymsg workspace number 10
