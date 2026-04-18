@@ -1,0 +1,4 @@
+# Window configuration
+assign [app_id="kitty"] 10
+assign [app_id="zen"] 9
+assign [app_id="org.keepassxc.KeePassXC"] 8
