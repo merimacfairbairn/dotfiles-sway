@@ -25,6 +25,9 @@ exec_always swayidle -w \
     timeout 1200 'systemctl suspend' \
     before-sleep 'swaylock -f'
 
+# Open up workspace 10 on start
+exec swaymsg workspace number 10
+
 ############
 # Defaults #
 ############
