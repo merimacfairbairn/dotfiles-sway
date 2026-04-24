@@ -3,6 +3,8 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 export GOPATH=$HOME/.go/
 
+export W3M_DIR=$HOME/.config/w3m/
+
 # QT5
 export QT_QPA_PLATFORMTHEME="gt5ct"
 
