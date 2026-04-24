@@ -15,6 +15,9 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Add Go binaries to PATH
 export PATH="$GOPATH/bin:$PATH"
 
+# RTFM
+export MANPAGER="/usr/bin/nvim +Man!"
+
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
     ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
