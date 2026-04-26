@@ -24,7 +24,7 @@
     "format-disconnected": "󰖪 ",
     "tooltip-format-disconnected": "Disconnected",
     "interval": 2,
-    "on-click": "kitty -- nmtui"
+    "on-click": "kitty --app-id 'pop-up' -- nmtui"
   },
 
   "battery": {
@@ -48,7 +48,7 @@
 
   "cpu": {
     "format": " {usage}%",
-    "on-click": "kitty -- htop",
+    "on-click": "kitty --app-id 'pop-up' -- htop",
     "tooltip": true
   },
 
@@ -76,7 +76,7 @@
     "exec": "~/.config/waybar/scripts/bluetooth-display.sh",
     "exec-if": "ls /sys/class/bluetooth >/dev/null 2>&1",
     "interval": 10,
-    "on-click": "kitty -- bluetui",
+    "on-click": "kitty --app-id 'pop-up' -- bluetui",
     "return-type": "plain",
     "tooltip": false,
     "max-length": 25
