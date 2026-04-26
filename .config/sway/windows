@@ -1,5 +1,7 @@
 # Window configuration
-assign [app_id="kitty"] 7
-assign [app_id="zen"] 8
-assign [app_id="org.keepassxc.KeePassXC"] 10
-assign [app_id="freetube"] 9
+assign {
+    [app_id="kitty"] 7
+    [app_id="zen"] 8
+    [app_id="freetube"] 9
+    [app_id="org.keepassxc.KeePassXC"] 10
+}
