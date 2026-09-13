@@ -21,8 +21,8 @@ exec_always swaync
 exec_always swayidle -w \
     timeout 300 'swaylock -f' \
 
-# Open up workspace 10 on start
-exec swaymsg workspace number 10
+# Open up workspace 4 on start
+exec swaymsg workspace number 4
 
 ############
 # Defaults #
